@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+    <style>
+        
+        img {
+            position: absolute; /* The image is fixed */
+            top: 100px; /* The image is 100 pixels down */
+            left: 200px; /* The image is 200 pixels to the right */
+           
+        }
+        .text {
+            margin-left: 500px; /* The text is 500 pixels to the right */
+        }
+
+        .rounded-image {
+            border-radius: 2%; /* Makes the image round by 2% */
+        }
+
+        .shifted-text {
+            margin-top: 150px; /* The margin-top shifts the text 150 pixels down */
+            margin-left: 790px; /* The margin-left shifts the text 790px to the right */
+        }
+
+        .shifted-text2 {
+            margin-top: 7px;
+            margin-left: 790px;
+        }
+        
+        .shifted-text3 {
+            margin-top: 9px;
+            margin-left: 790px;
+        }
+        body {
+            background: radial-gradient(circle, #a6779e, #e3bbdd); /* Gradient background */
+            margin: 0;
+            padding: 0;
+        }
+        
+ .deadline.expired-message {
+    margin-left: 790px; /*The margin-left shifts the text 790px to the right */
+ }
+ .deadline-format {    
+    display: inline-block; /* Ensures all elements are on the same line */
+    margin-right: 20px; /* Adjusts the right margin for spacing */
+}
+
+.deadline-format h4 {
+    font-size: 18px; /* font size */
+    color: #bb6da7; /* font color */
+    margin-bottom: 5px; /* spacing between number and text */
+    font-family: Arial, Helvetica, sans-serif; /* Font-family */
+}
+
+.deadline-format span {
+    font-size: 15px; /* font size for the text */
+    color: #bb6da7; /* font color */
+    font-family: Arial, Helvetica, sans-serif; /* Font-family */
+}
+
+.deadline-format > div {
+    position: relative;
+    padding: 5px 10px; /* Padding for spacing */
+    border: 3px solid #8a4b7a; /* border */
+    border-radius: 4px; /* Border radius for rounded corners */
+    background-color: #3f1132; /* Background color */
+    width: 50px;
+    height: 70px;
+    text-align: center; /* To enter align text */
+}
+
+@media (max-width: 620px) {
+    .center {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+       align-items:flex-start;
+    }
+    .shifted-text {
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .shifted-text2 {
+        margin-left: 20px;
+        display: inline-block;
+    }
+    .shifted-text3 {
+        margin-left: 20px;
+        display: inline-block;
+    }
+    img{
+        left: 20px;
+        width: 370px;
+        height: 220px;
+        display: inline-block;
+    }
+    .deadline.expired-message {
+        margin-left: 20px;
+        display: flex;
+    }
+    .deadline-format {
+        margin-left: 1px;
+        display: inline-block;
+    }
+    
+    }
+
+    </style>
+</head>
+<body>
+    <section class="center">
+    <article class="giveaway info"> 
+        <p class="shifted-text"><span style="color:rgb(38, 10, 60); font-family: 'Times New Roman', Times, serif; font-size: 25px; font-weight: bold;">ARIANA GRANDE'S PERFUME GIVEAWAY</span>.</p>
+        <p class="shifted-text2"><span style="color:rgb(38, 10, 60); font-family: Georgia, 'Times New Roman', Times, serif; font-size: 17px;">Giveaway ends On Saturday, 9 March 2024 At 11:30am</span>.</p>
+        <p class="shifted-text3"><span style="color:rgb(38, 10, 60); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit<br>molestiae cum libero atque ut voluptate qui consectetur aliquid incidunt<br>voluptatem quos, dolore, non commodi quaerat aliquam eligendi,<br>quisquam totam blanditiis</span>.</p>
+    
+        <article class="giveaway-picture"> 
+            <img class="rounded-image shifted-image" src="project imagee.jpg" alt="old iphone" width="550" height="350">
+            <div class="deadline expired-message">
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="days">09</h4>
+                        <span>DAYS</span>
+                    </div>
+                </div>
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="hours">12</h4>
+                        <span>HOURS</span>
+                    </div>
+                </div>
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="minutes">49</h4>
+                        <span>MINS</span>
+                    </div>
+                </div>
+                <div class="deadline-format">
+                    <div>
+                        <h4 class="seconds">50</h4>
+                        <span>SECS</span>
+                    </div>
+                </div> 
+            </div>
+    
+        </article>
+    </article>
+</section>
+<script src="./script2.js"></script> 
+</body>
+</html>
